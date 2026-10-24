@@ -1,0 +1,13 @@
+def getintersectionNode(head A, head B):
+    p1 = head A
+    p2 = head B
+    while p1 != p2:
+        if p1:
+            p1 = p1.next
+        else:
+            p1 = head B
+        if p2:
+            p2 = p2.next
+        else:
+            p2 = head A
+    return p1
